@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --light-grey: #f5f6f7;
+  --dark-blue: #1b1b32;
+  --orange: #f1be32;
+}
+
+body {
+  background-color: var(--dark-blue);
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  color: var(--light-grey);
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin: 20px 0;
+}
+
+.container {
+  font-weight:bold;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom:50px;
+  border: 1px solid white;
+  background-color:rgba(111, 111, 143, 0.3);
+  max-width:100%;
+  width:60%;
+}
+
+.convert-btn {
+  background-color: var(--orange);
+  cursor: pointer;
+  border: none;
+  padding: 4px;
+}
+
+.number {
+  height: 25px;
+}
+
+#output {
+  margin: 10px 0;
+  border: 1px solid white;
+  font-size: 2rem;
+  text-align: center;
+  background-color:rgba(111, 111, 143, 0.3);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width:60%;
+}
+
+.hidden {
+  display:none;
+}
+
+
+@media screen and (min-width: 500px) {
+  .input-container {
+    flex-direction: row;
+  }
+}
